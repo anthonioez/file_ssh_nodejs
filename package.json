@@ -1,0 +1,28 @@
+{
+  "name": "file_ssh_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc index.ts --resolveJsonModule --esModuleInterop",
+    "start": "node index.js",
+    "rerun": "npm run build && npm run start",
+    "gftest": "npm install && npm run build && npm run start",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.3",
+    "byline": "^5.0.0",
+    "ssh2": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/async": "^3.2.12",
+    "@types/byline": "^4.2.33",
+    "@types/node": "^17.0.18",
+    "@types/ssh2": "^0.5.51",
+    "typescript": "^4.5.5"
+  }
+}
